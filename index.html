@@ -8,14 +8,6 @@
     h1 {
         text-align: center;
     }
-    div.loginbox {
-        /* display it on the top right corner of the page */
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 10px;
-        padding: 10px;
-    }
 
     div.login button {
         /* add some space between the links */
@@ -31,19 +23,10 @@
 <body>
 
     <h1>Welcome to DDoS Detector</h1>
-    <!-- create login and sign up links -->
-    <p>To use the DDoS Detector, please login!</p>
 
-    {% if name %}
-    <div class="loginbox">
-        <p>Hello {{ name }}!</p>
-        <button class="logout btn btn-outline-primary" onclick="window.location.href='/logout'">logout</button>
-    </div>
-    {% else %}
-    <div class="loginbox">
-        <button class="login btn btn-outline-primary" onclick="window.location.href='/login'">login</button>
-    </div>
-    {% endif %}
+
+        <button class="logout btn btn-outline-primary" onclick="window.location.href='/detect'">detect page</button>>
+
 
 
 
