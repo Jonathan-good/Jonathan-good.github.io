@@ -21,7 +21,7 @@
 <body>
     <h1 class="p-3">Welcome to DDoS detector page!</h1>
     <p class="p-3">Upload the pcap capture file <b>or</b> enter the data to detect the DDoS attack</p>
-                <form method="post" action="/detect_file" enctype="multipart/form-data">
+                <form method="post" action="/detect_file.php" enctype="multipart/form-data">
                     <fieldset class="form-group border p-3">
                         <legend class="float-none w-auto px-2 file_upload">Option 1: Upload the pcap file</legend>
                         <div class="row justify-content-center">
@@ -41,7 +41,7 @@
                 </form>
 
 
-                <form method="post" action="/detect_form" enctype="multipart/form-data" class="needs-validation" novalidate>
+                <form method="post" action="/detect_file.php" enctype="multipart/form-data" class="needs-validation" novalidate>
                     <fieldset class="form-group border p-3">
                         <legend class="float-none w-auto px-2 file_upload">Option 2: Manually upload data</legend>
                         <div class="row justify-content-center">
